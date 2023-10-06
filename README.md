@@ -1,9 +1,8 @@
 # cuaderno
 cuaderno lenguajes de marcas
 
-
-# Título
-
+## TITULO
+[índice](#índice)
 
 ### Qué es un lenguaje de marcas
 
@@ -30,16 +29,16 @@ Consiste en un sistema para la organización y etiquetado de documentos.Organism
 
 
 
-- Características de los lenguaje de marcas
+### Características de los lenguaje de marcas
 
 
 Tipo de lenguaje que comnbina texto con información extra acerca del texto.Esa información extra se entremezcla con el texto primario.
 
 
-- Características y ejemplos de los siguientes lenguajes de marcas:
+### Características y ejemplos de los siguientes lenguajes de marcas:
 
 
-    - XML
+   - XML
      
     Es un lenguaje de mercado extensible de formato simple basado en texto para representar la información de manera estructurada.
 
@@ -61,29 +60,28 @@ Tipo de lenguaje que comnbina texto con información extra acerca del texto.Esa 
     
     
     Ejemplo:
+![alt](https://www.info-computer.com/modules/dbblog/views/img/post/como-abrir-los-archivos-json.png)
 
-    {
-  "nombre":"Jonh Doe",
+![alt](https://www.sqlshack.com/wp-content/uploads/2016/06/word-image-128.png)
+    
 
-  "profesion":"Programador",
+  - YAML
 
-  "edad":25,
-
-  "lenguajes":["PHP","Javascript","Dart"],
-
-  "disponibilidadParaViajar":true,
-  "rangoProfesional": {
-
-  "aniosDeExperiencia": 12,
-
-   "nivel": "Senior"
-  }
-}
-    - YAML
-
-Es un formato de serialización de datos legible por humanos inspirado en lenguajes como XML,C,Python,Perl, así como en el formato de los correos electrónicos.Un lenguaje de declaración de datos que facilita la legibilidad y la capacidad de escritura del usuario. 
+    Es un formato de serialización de datos legible por humanos inspirado en lenguajes como XML,C,Python,Perl, así como en el formato de los correos electrónicos.Un lenguaje de declaración de datos que facilita la legibilidad y la capacidad de escritura del usuario. 
 
 
   
+ ### XML: Definición y características del metalenguaje
+
+  - Prologo : Contiene la información (meta información) sobre el resto del documento, como son la versión de XML y el código caracteres utilizados.
+  - Contenido: Es un documento basado en texto que se puede guardar con la extensión.XML.
+  - Atributos: Son la parte de los elementos XML. Un elemento puede tener varios atributos únicos. Se definen las propiedades de los elementos.
+
+- Ejemplos en XML 
+
+![alt](https://www.mclibre.org/consultar/xml/img/ejemplos/css/css-1-gc.png)
+
+![alt](https://help.seagullscientific.com/2022/es/Content/Resources/Images/XML_sample_file.GIF)
 
 
+![alt](https://global.discourse-cdn.com/standard17/uploads/velneo/original/2X/7/79ee418e8c8d9b4de3f0a93cde8d6241d86dcb7a.png)
