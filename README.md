@@ -77,7 +77,7 @@ Tipo de lenguaje que comnbina texto con información extra acerca del texto.Esa 
   - Contenido: Es un documento basado en texto que se puede guardar con la extensión.XML.
   - Atributos: Son la parte de los elementos XML. Un elemento puede tener varios atributos únicos. Se definen las propiedades de los elementos.
 
-- Ejemplos en XML 
+### Ejemplos en XML 
 
 ![alt](https://www.mclibre.org/consultar/xml/img/ejemplos/css/css-1-gc.png)
 
