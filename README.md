@@ -1,7 +1,7 @@
 # cuaderno
 cuaderno lenguajes de marcas
 
-## TITULO
+## UNIDAD 1
 [índice](#índice)
 
 ### Qué es un lenguaje de marcas
@@ -106,8 +106,88 @@ Puede añadirse comentarios entre los símboloes "<!--" y ">".
 
 Si un elemento esta vacío, puede acortarse usando solo la etiqueta de inicio entre los símbolos "<" y "/>".
 
+Ejemplos en XML 
+
+![alt](https://tse4.mm.bing.net/th?id=OIP.3xRFagU0duA3H94IAbrpXgAAAA&pid=Api&P=0&h=180)
+
+![alt](https://i.stack.imgur.com/cpl8j.jpg)
+
+![alt](https://www.oracle.com/technetwork/es/images/xmltype-database-7-1931055.gif)
 
 
+## UNIDAD 2
+
+### Documentos XML,estructura:
+
+- Declaración o prólogo
+
+Es un elemento opcional que se incluye al inicio del documento.Incluye los siguientes atributos.
+  
+
+
+  Versión; versión de la especificación XML. Por defecto es 1.0; pero se puede utilizar XML 1.1 si se requieren las nuevas funcionalidades.
+  
+  Enconding: codificación en la que está escrito el documento.
+
+  Standalone: indica si el documento contiene un DTD en el propio documento (yes) o por el contrario es externo (no).
+
+- Elementos
+
+Un documento xml se compone por una serie de elementos que pueden estar anidados unos con otros. Los elementos tienen las siguientes características:
+
+Un elemento tiene un nombre que se diferencian entre mayúsculas y minúsculas. Además, el nombre puede empezar por _y porun carácter.
+
+Debe haber un único elemento inicial llamado raíz.
+
+Dentro de un elemento, puede contener más elementos o un texto.
+
+Cuando un elemento está vacío, se pone con la siguiente notación. <nombre/>
+
+
+Los elementos, tienen una serie de relaciones:
+
+Un único elemento Raíz.
+
+Cada uno de los elementos descendientes de otro elemento, se les llama hijos (children).
+
+El elemento ascendente de otro elemento se le llama (parent).
+
+Los elementos con un padre común se les llama hermanos (sibling).
+
+
+- Atributos
+
+- Comentarios
+
+
+- Espacios de Nombres
+
+- Entidades
+
+- CDATA
+
+### Validación de documentos: 
+* DTD:
+  * Entidades
+
+  * Anotaciones
+
+  * Elementos 
+
+  * Atributos
+
+* XMLSchema
+  
+    * Definición
+    * Estructura Básica
+    * Elementos Locales y Globales
+    * Elementos Simples
+    * Elementos Complejos
+    * Subelementos
+    * Atributos
+    * Restricciones
+    * Tipos de Datos
+    * Comentarios en XMLSChema
 
 
 
