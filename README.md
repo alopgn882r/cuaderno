@@ -40,26 +40,29 @@ Tipo de lenguaje que comnbina texto con información extra acerca del texto.Esa 
 
    - XML
      
-    Es un lenguaje de mercado extensible de formato simple basado en texto para representar la información de manera estructurada.
+  Es un lenguaje de mercado extensible de formato simple basado en texto para representar la información de manera estructurada.
 
-      -  Es un estándar para escribir datos estructurados en un fichero de texto.
-       - Parece HTML pero no lo es.
-       - Está en formato texto, pero no para ser leído.
-       - Consta de una familia de tecnologías.
-       - Es prolijo, pero no supone un problema.
+   -  Es un estándar para escribir datos estructurados en un fichero de texto.
+  - Parece HTML pero no lo es.
+ - Está en formato texto, pero no para ser leído.
+  - Consta de una familia de tecnologías.
+  - Es prolijo, pero no supone un problema.
 
-    - HTML
+  ![alt](https://www.researchgate.net/profile/Rolando_Palermo_Rodriguez_Cruz/publication/311535227/figure/download/fig1/AS:437411000918016@1481298317996/Figura-21-Ejemplo-basico-de-documento-XML-para-la-representacion-de-un-objeto-de-tipo.png)
+
+  - HTML
     
     Es el lenguaje de la web, de manera que la inmensa mayoría de las páginas que existen están escritas en HTML. Define los contenidos de un sitio web de forma textual y estructurada indicando al navegador cómo debe visualizarse el sitio.
 
     ![alt](https://es.godaddy.com/blog/wp-content/uploads/Ejemplo-negritas-html-768x101.jpg)
 
-    - JSON
+   - JSON
    
    Es un formato de texto sencillo para el intercambio de datos. Se trata de un subconjunto de la notación literal de objetos de JavaScript, aunque, debido a su amplia adopción como alternativa a XML, se considera un formato independiente del lenguaje.
     
     
-    Ejemplo:
+   Ejemplo:
+
 ![alt](https://www.info-computer.com/modules/dbblog/views/img/post/como-abrir-los-archivos-json.png)
 
 ![alt](https://www.sqlshack.com/wp-content/uploads/2016/06/word-image-128.png)
@@ -69,19 +72,42 @@ Tipo de lenguaje que comnbina texto con información extra acerca del texto.Esa 
 
     Es un formato de serialización de datos legible por humanos inspirado en lenguajes como XML,C,Python,Perl, así como en el formato de los correos electrónicos.Un lenguaje de declaración de datos que facilita la legibilidad y la capacidad de escritura del usuario. 
 
-
+![alt](https://ichi.pro/assets/images/max/724/1*7WUeUPTU6T0Y7sfvi_0mpg.jpeg)
   
  ### XML: Definición y características del metalenguaje
+Es un metalenguaje, que va a permitir a través de distintos etiquetados,crear nuevos lenguajes de marcas o dialectos, gracias a unas reglas que define. Es mantenido por la W3C (World Wide Web Consortium), y proviene del estándar SGML.
 
   - Prologo : Contiene la información (meta información) sobre el resto del documento, como son la versión de XML y el código caracteres utilizados.
+  
   - Contenido: Es un documento basado en texto que se puede guardar con la extensión.XML.
   - Atributos: Son la parte de los elementos XML. Un elemento puede tener varios atributos únicos. Se definen las propiedades de los elementos.
 
-### Ejemplos en XML 
+  Un atributo en XML, es una información adicional que se le da a una etiqueta en concreto. 
 
-![alt](https://www.mclibre.org/consultar/xml/img/ejemplos/css/css-1-gc.png)
+  Comienza con una palabra, seguido del símbolo "=" y la información entre comillas dobles.
 
-![alt](https://help.seagullscientific.com/2022/es/Content/Resources/Images/XML_sample_file.GIF)
+  Una etiqueta puede tener 0 o más atributos.
+  
+  Cada atributo tendrá solo información; y no puede contener como tal otros atributos.
+  - Etiquetas: 
+ 
+  Una etiqueta en XML debe tener un inicio que será una palabra entre los símbolos "<" y ">".
+
+  Siempre debe haber una etiqueta de cierre que contendrá la misma palabra de inicio entre los símbolos "</" y ">".
+
+  El par de etiqueta de apertura y cierre se llama elemento.
+
+  Dentro de un elemento, puede encontrarse información (texto), u otros elementos.
+
+  En un documento XML, solo puede encontrarse un elemento raíz.
 
 
-![alt](https://global.discourse-cdn.com/standard17/uploads/velneo/original/2X/7/79ee418e8c8d9b4de3f0a93cde8d6241d86dcb7a.png)
+Puede añadirse comentarios entre los símboloes "<!--" y ">".
+
+Si un elemento esta vacío, puede acortarse usando solo la etiqueta de inicio entre los símbolos "<" y "/>".
+
+
+
+
+
+
