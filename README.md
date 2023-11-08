@@ -157,37 +157,216 @@ Los elementos con un padre común se les llama hermanos (sibling).
 
 - Atributos
 
+Un atributo se imcluye como información adicional dentro de un elemento; tienen las siguientes características.
+
+* Puede comenzar por guion bajo _ o por un carácter, además su nombre no puede contener espacios.
+
+* Deben tener un valor, que puede ir entre comillas ya sean dobles o simples; pero se recomienda el uso de dobles.
+
+* Pueden ser opcionales su aparición y siempre deben de estar dentro de un elemento.
 - Comentarios
+
+Un comentario en XML, permite añadir información sin que esta sea procesada. Suele ser util para poner información al documento para el usuario.
 
 
 - Espacios de Nombres
 
+Un espacio de nombres o namespace, permite distinguir etiquetas que pueden ser ambiguas. Para ello, se puede usar un atributo especial llamado xmlns seguido de dos puntos y el nombre del prefijo a utilizar. Después en el valor del atributo, se establece la URI donde esta definido el DTD de dicho espacio de nombres.
 - Entidades
+
+Las entidades, son fragmentos de información predefenidos que nos van a permitir incluir dicha información sin necesidad de repetir dicha información o utilizar caracteres especiales.
+
+* Para utilizar una entidad se comienza con el carácter & y se termina con ;.
+
+* Pueden estar definidas en el DTD o que sean externas.
+
+* Se pueden clasificar en:
+  * Generales: Forma parte del documento
+  
+  Internas: Están definidas en el propio documento.
+  Externas:Están definidas en un documento externo.
+
+  * Externas por parámetros: permite transformarlas en un DTD.
+
+  Además, XML incluye unas entidades internas predefinidas.
 
 - CDATA
 
+El elemento CDATA, es un fragmento de información que no será procesador por el analizador; sin embargo, si que se almacenará su información, a diferencia de los comentarios.
+
+![alt](https://cdn.educba.com/academy/wp-content/uploads/2020/05/Xml-CDATA-4.jpg)
+
 ### Validación de documentos: 
+
+A la hora de trabajar con documentos XML, hay que tener en cuenta dos cuestiones.
+
+* Que el documento esté bien formado, es decir que cumpla las reglas del metalenguaje XML.
+
+* Que el documento esté validado, esto quiere decir que la estructura del documento cumpla un cierto esquema o vocabulario.
+
+Es importante decir, que para que un documento este bien formado, si:
+
+* Tiene un único elemento Raíz.
+
+* Todos los elementos deben estar cerrados.
+
+* Los elementos tienen que estar anidados correctamente; no se pueden intercalar aperturas y cierres.
+
+* Todos los valores de los atributos están entrecomillados.
+
+* Los nombres de elementos y atributos, deben cumplir sus respectivas reglas.
+
+Para realizar la validación de un documento XML, podemos usar dos herramientas. 
+
+ DTD
+
+ (Document Type Definition), es una serie de reglas que van a permitir validar que la estructura de un documento es válida
+
+ Las reglas contenidas en un DTD tienen que ver con la estructura del documento (elementos, atributos, entidades...); aunque tiene algunas limitaciones que se pueden suplir usando XML Schema.
+
+ Un DTD, puede ser: 
+
+ * Interno: que esta definido en el propio documento.
+
+ * Externo: que esta definido en un fichero externo.
+
+ 
+ XML Schema
+
+
+
 * DTD:
   * Entidades
+Permiten utilizar un valor fijo cuando se utiliza esta unidad.
 
-  * Anotaciones
+Las entidades pueden ser:
 
-  * Elementos 
+* Internas. Están dentro del propio DTD.
+* Externas. Se definen en un fichero externo. Pudiendo ser:
+  * Pública
+  * Privada
+
+
+* Anotaciones
+Una anotación es un componente que define un formato de un valor, concretamente que no se utilizaran como una entidad XML, como puede ser el caso del valor de un atributo.
+
+Pueden ser Publicas o Privadas.
+
+ * Elementos 
+ 
+ Define la estructura de uno o varios elementos que contienen el elemento. 
+
+Donde contenido puede ser:
+
+* Empty: Vacío.
+* ANY:Cualquier valor.
+* (#PCDATA): Elemento de tipo carácter.
+
+* (NombreElemento): Elemento Hijo.
+
+* (NombreElemento1,NombreElemento)Lista de elementos hijos.
+
+Es importante saber, que se puede indicar una cardinalidad, a la hora de saber cuantas veces puede repetirse un elemento dentro de otro. 
 
   * Atributos
+
+  Donde tipoAtributo puede ser:
+
+  * CDATA: Cadena de caracteres.
+
+  * (Valor1/Valor2): Lista de valores.
+
+  * ID: Identificador único.
+
+  * IDREF: Referencia a un identificador de otro elemento.
+
+  * IDREFS: Lista de identificadores de otro elemento.
+
+  * NMTOKENS: Lista de Nombres XML válidos.
+
+  * ENTITY: Referencia a una entidad.
+
+  * ENTITIES: Referencia a un conjunto de entidades.
+
+  * NOTATION: Nombre de una anotación.
+
+  * XML:lang: Idioma del documento.
+
+  * XML:space: Indica si se han de respetar espacios, tabulaciones y retornos de carro múltiples.
+
+  Por otro lado, para ver los valores de un atributo, puede ser: 
+
+  * Valor: valor o lista de valores (separados por 
+  |) que puede tomar el atributo.
+
+  * #REQUIRED: Atributo obligatorio.
+
+  * #IMPLIED: Indica que el valor es opcional.
+
+  * #FIXED valor: Indica un valor fijo.
 
 * XMLSchema
   
     * Definición
+
+    Es un lenguaje de esquema utilizado para describir la estructura y las restricciones de los contenidos de los documentos XML de una forma muy precisa, más allá de las normas sintáticas impuestas por el propio lenguaje XML. Se consigue así una percepción del tipo de documento con un nivel alto de abstraccción. 
+
     * Estructura Básica
-    * Elementos Locales y Globales
-    * Elementos Simples
-    * Elementos Complejos
-    * Subelementos
-    * Atributos
-    * Restricciones
-    * Tipos de Datos
-    * Comentarios en XMLSChema
+
+Deben tener una estructura jerárquica con lo que respecta a las etiquetas que delimitan sus elementos.
+
+  * Elementos Locales y Globales
+
+   * Elementos Simples
+
+   <xs:element name="mes" type="xs:string" fixed="agosto"/>
+
+
+   * Elementos Complejos
+
+   <xs:element name="bola">
+
+
+  <xs:complexType>
+
+
+  <xs:attribute name="numero" type="numeroDeBola"/>
+
+
+  </xs:complexType>
+
+
+</xs:element>
+
+
+<xs:simpleType name="numeroDeBola">
+
+
+   <xs:restriction base="xs:positiveInteger">
+
+
+  <xs:minInclusive value="1"/>
+
+
+ <xs:maxExclusive value="90"/>
+
+
+   </xs:restriction>
+
+
+</xs:simpleType>
+
+   * Subelementos
+   * Atributos
+
+   <xs:attribute name="nombre_del_atributo" type="tipo_de_dato"/>
+
+   * Restricciones
+
+   xs:length  Especifica una lontiud fija.
+   
+   * Tipos de Datos
+   * Comentarios en XMLSChema
 
 
 
