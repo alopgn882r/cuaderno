@@ -388,9 +388,6 @@ Deben tener una estructura jerárquica con lo que respecta a las etiquetas que d
 
    * Comentarios en XMLSChema
 
-   ![alt](https://www.researchgate.net/publication/255486172/figure/fig3/AS:392665385455624@1470630131647/Figura-4-W3C-XML-Schema-opinionxsd.png)
-
-   ![alt](https://www.researchgate.net/publication/215608011/figure/fig2/AS:393922359644177@1470929817522/Sample-XML-Schema-with-model-references.png)
    
 
 ![alt](https://sp-uploads.s3.amazonaws.com/uploads/services/7027690/20230315111842_6411a99205a3b_01_xml_schema__2_page1.jpg)
