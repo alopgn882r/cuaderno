@@ -56,6 +56,7 @@ Tipo de lenguaje que comnbina texto con información extra acerca del texto.Esa 
 
     ![alt](https://es.godaddy.com/blog/wp-content/uploads/Ejemplo-negritas-html-768x101.jpg)
 
+
    - JSON
    
    Es un formato de texto sencillo para el intercambio de datos. Se trata de un subconjunto de la notación literal de objetos de JavaScript, aunque, debido a su amplia adopción como alternativa a XML, se considera un formato independiente del lenguaje.
@@ -66,6 +67,7 @@ Tipo de lenguaje que comnbina texto con información extra acerca del texto.Esa 
 ![alt](https://www.info-computer.com/modules/dbblog/views/img/post/como-abrir-los-archivos-json.png)
 
 ![alt](https://www.sqlshack.com/wp-content/uploads/2016/06/word-image-128.png)
+
     
 
   - YAML
@@ -117,7 +119,7 @@ Ejemplos en XML
 
 ## UNIDAD 2
 
-### Documentos XML,estructura:
+### Documentos XML, estructura:
 
 - Declaración o prólogo
 
@@ -311,23 +313,28 @@ Es importante saber, que se puede indicar una cardinalidad, a la hora de saber c
 
     Es un lenguaje de esquema utilizado para describir la estructura y las restricciones de los contenidos de los documentos XML de una forma muy precisa, más allá de las normas sintáticas impuestas por el propio lenguaje XML. Se consigue así una percepción del tipo de documento con un nivel alto de abstraccción. 
 
-    * Estructura Básica
+* Estructura Básica
 
 Deben tener una estructura jerárquica con lo que respecta a las etiquetas que delimitan sus elementos.
 
   * Elementos Locales y Globales
 
+    * Los elementos locales son aquellos que se definen dentro de un elmento complejo, y solo son válidos dentro del contexto de ese elemento. No puede ser referenciados desde fuera del elemento que los contiene.
+    * Los elementos globales son aquellos que se definen a nivel superior en el  esquema XML y puede ser referenciados desde cualquier parte del documento XML o incluso desde otros docuemntos XML que importen el esquema.
    * Elementos Simples
+
+   Se utilizan para definir elementos XML que contienen un solo valor de datos sin atributos ni elementos secundarios.
 
    <xs:element name="mes" type="xs:string" fixed="agosto"/>
 
 
    * Elementos Complejos
 
+   Se utilizan para definir elementos XML que pueden contener atributos, elementos secundarios o ambas cosas. Estos elementos pueden tener una estructura más compleja en comparación con los elementos simples, ya que pueden contener múltiples valores y tipos de datos.
+
    <xs:element name="bola">
 
-
-  <xs:complexType>
+   <xs:complexType > 
 
 
   <xs:attribute name="numero" type="numeroDeBola"/>
@@ -357,16 +364,34 @@ Deben tener una estructura jerárquica con lo que respecta a las etiquetas que d
 </xs:simpleType>
 
    * Subelementos
+
+   Se utilizan para definir la estructura interna de un elemento complejo. Los subelementos son elementos XML que están anidados dentro de otro elemento en un documento XML. 
    * Atributos
+
+   Se utilizan para proporcionar información adicional sobre un elemento. Los atributos son parees de nombre y valor que se adjuntan a un elemento XML y se utilizan para definir metadatos, configuraciones o características específicas del elemento.Pueden usarse para descriibir información que no es adecuada para representar como un subelemento.
 
    <xs:attribute name="nombre_del_atributo" type="tipo_de_dato"/>
 
    * Restricciones
 
+   Se utilizan para definir reglas y limitaciones sobre los datos que pueeden aparecer en un documento XML. Estas restricciones se aplican a elementos y atributos para garantizar que los datos cumple con ciertas condiciones específicas. 
+   
+   * Tipos de datos predefinidos.
+   * Restricciones de Longitud y Patrón.
+   * Restricciones Númericas.
+
    xs:length  Especifica una lontiud fija.
    
    * Tipos de Datos
+
+   Proporciona varios tipos de datos predefinidos que se pueden utilizar para definir los elementos y atributos en un documento XML. 
+
    * Comentarios en XMLSChema
+
+   ![alt](https://www.researchgate.net/publication/255486172/figure/fig3/AS:392665385455624@1470630131647/Figura-4-W3C-XML-Schema-opinionxsd.png)
+
+   ![alt](https://www.researchgate.net/publication/215608011/figure/fig2/AS:393922359644177@1470929817522/Sample-XML-Schema-with-model-references.png)
+   
 
 
 
